@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\sadea\OneDrive\Masaüstü\java_works_mix\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3959137331.index
+2288540347.index
+3926540632.index

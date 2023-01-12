@@ -1,0 +1,60 @@
+package autoGirlfriendResponser;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Main {
+	 public static void main(String[] args) {
+		    Main.ComplimentGenerator app = ComplimentGenerator.new ComplimentGenerator();
+		    app.setVisible(true);
+		    
+		  }
+
+		public class ComplimentGenerator extends JFrame implements ActionListener {
+			  // Metin girdisi alanı
+			  private JTextField inputField;
+			  
+			  // Düğme
+			  private JButton submitButton;
+			  
+			  // Arayüzü oluşturan panel
+			  private JPanel panel;
+			  
+			  public ComplimentGenerator() {
+			    // Bileşenleri oluşturalım ve panelin üzerine ekleyelim
+			    inputField = new JTextField(20);
+			    submitButton = new JButton("Gönder");
+			    panel = new JPanel();
+			    panel.add(inputField);
+			    panel.add(submitButton);
+			    
+			    // Paneli penceremizin içine ekleyelim
+			    add(panel);
+			    
+			    // Pencereyi ayarlayalım
+			    setTitle("İltifat Oluşturucu");
+			    setSize(300, 100);
+			    setLocationRelativeTo(null);
+			    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			    
+			    // Düğmenin dinleyicisini ekleyelim
+			    submitButton.addActionListener(this);
+			  }
+			  
+			  public void actionPerformed(ActionEvent e) {
+			    // Kullanıcının girdiği metni alalım
+			    String input = inputField.getText();
+			    
+			    // Metni kontrol edelim
+			    if (input.contains("sen çok güzelsin")) {
+			      // Eğer uygun bir iltifat bulunduysa, ekrana yazdıralım
+			      JOptionPane.showMessageDialog(this, "Teşekkür ederim, sen de çok güzel bir insansın!");
+			    }
+			  }
+			  
+			 
+			}
+		
+	
+
+}
