@@ -154,7 +154,7 @@ public class Main {
             }
         }
         if (month<1 || month>12) {
-			if (day<1 || day>32) {
+			if (day<1 || day>31) {
 				JOptionPane.showMessageDialog(this, "Error: Takvimde olmayan gün ya da ay girdiniz!");
 			}
 		}
