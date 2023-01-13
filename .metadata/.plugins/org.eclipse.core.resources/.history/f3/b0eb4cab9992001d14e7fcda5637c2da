@@ -110,7 +110,7 @@ public class Main {
         }
         if (month == 8){
             if (day >=1 && day <= 31){
-                if ( day <= 23){
+                if ( day < 23){
                 	JOptionPane.showMessageDialog(this, "Aslan burcusunuz.");
                 }else{
                 	JOptionPane.showMessageDialog(this, "Başak burcusunuz.");
@@ -154,11 +154,9 @@ public class Main {
             }
         }
         if (month<1 || month>12) {
-        	JOptionPane.showMessageDialog(this, "Error: Takvimde olmayan gün ya da ay girdiniz!");
-			
-		}
-        if (day<1 || day>31) {
-			JOptionPane.showMessageDialog(this, "Error: Takvimde olmayan gün ya da ay girdiniz!");
+			if (day<1 || day>32) {
+				JOptionPane.showMessageDialog(this, "Error: Takvimde olmayan gün ya da ay girdiniz!");
+			}
 		}
     
 		    });}

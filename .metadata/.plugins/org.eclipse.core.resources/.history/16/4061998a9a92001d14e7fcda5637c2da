@@ -110,7 +110,7 @@ public class Main {
         }
         if (month == 8){
             if (day >=1 && day <= 31){
-                if ( day <= 23){
+                if ( day < 23){
                 	JOptionPane.showMessageDialog(this, "Aslan burcusunuz.");
                 }else{
                 	JOptionPane.showMessageDialog(this, "Başak burcusunuz.");
